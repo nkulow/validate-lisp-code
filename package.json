@@ -1,0 +1,29 @@
+{
+  "name": "validate-lisp-code",
+  "version": "1.0.0",
+  "description": "Write a checker that validates the parentheses of LISP code.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkulow/validate-lisp-code.git"
+  },
+  "author": "Nathan Kulow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkulow/validate-lisp-code/issues"
+  },
+  "homepage": "https://github.com/nkulow/validate-lisp-code#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "node": "^19.3.0",
+    "npm": "^9.2.0"
+  }
+}
