@@ -6,7 +6,15 @@ describe ('validate LISP parentheses', () => {
         expect(validateParentheses('(valid () test)')).toEqual(true);
     });
 
-    test('should return false for invalid LISP code', () => {
+    test('should return false for extra open bracket', () => {
         expect(validateParentheses('(valid (() test)')).toEqual(false);
+    });
+
+    test('should return false for extra closed bracket', () => {
+        expect(validateParentheses('(valid () test))')).toEqual(false);
+    });
+
+    test('should return false for reversed bracket', () => {
+        expect(validateParentheses(')valid () test))')).toEqual(false);
     });
 });
